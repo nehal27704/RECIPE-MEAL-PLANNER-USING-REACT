@@ -1,0 +1,126 @@
+/* ===== Recipe Form Container ===== */
+.max-w-lg.mx-auto.p-6.bg-white.shadow-lg.rounded-2xl,
+.recipe-form-container {
+  max-width: 650px;
+  margin: 60px auto;
+  padding: 40px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  transition: box-shadow 0.3s ease;
+}
+
+.recipe-form-container:hover {
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.2);
+}
+
+/* ===== Heading ===== */
+.recipe-form-container h2,
+.text-xl.font-bold.text-center.mb-4 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333;
+  text-align: center;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.recipe-form-container h2::after,
+.text-xl.font-bold.text-center.mb-4::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 4px;
+  background: #4caf50;
+  margin: 12px auto 0;
+  border-radius: 3px;
+}
+
+/* ===== Inputs & Textareas ===== */
+.recipe-form-container input[type="text"],
+.recipe-form-container input[type="number"],
+.recipe-form-container textarea,
+.recipe-form-container select,
+.w-full.p-2.mb-3.border.rounded-lg {
+  width: 100%;
+  padding: 14px 16px;
+  margin-bottom: 18px;
+  border: 1.6px solid #d0d0d0;
+  border-radius: 10px;
+  font-size: 1rem;
+  background: #fafafa;
+  transition: all 0.3s ease;
+}
+
+.recipe-form-container input:focus,
+.recipe-form-container textarea:focus,
+.recipe-form-container select:focus,
+.w-full.p-2.mb-3.border.rounded-lg:focus {
+  border-color: #4caf50;
+  background: #fff;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.15);
+}
+
+/* ===== Section Headings (Ingredients/Steps) ===== */
+.recipe-form-container h4,
+.font-semibold.mt-4 {
+  margin-top: 24px;
+  margin-bottom: 10px;
+  color: #444;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-left: 4px solid #4caf50;
+  padding-left: 8px;
+}
+
+/* ===== Action Buttons ===== */
+.recipe-form-container button,
+.bg-green-500,
+.bg-purple-500,
+.bg-blue-500 {
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.recipe-form-container button:hover,
+.bg-green-500:hover,
+.bg-purple-500:hover,
+.bg-blue-500:hover {
+  transform: translateY(-2px);
+}
+
+/* Specific colors for dynamic buttons */
+.bg-green-500 { background-color: #4caf50 !important; color: #fff; }
+.bg-green-500:hover { background-color: #43a047 !important; }
+
+.bg-purple-500 { background-color: #9c27b0 !important; color: #fff; }
+.bg-purple-500:hover { background-color: #8e24aa !important; }
+
+.bg-blue-500 { background-color: #2196f3 !important; color: #fff; }
+.bg-blue-500:hover { background-color: #1e88e5 !important; }
+
+/* Save/Update button spanning full width */
+.recipe-form-container .save-btn,
+.w-full.bg-blue-500.text-white.py-2.rounded-lg {
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .recipe-form-container {
+    padding: 25px;
+  }
+
+  .recipe-form-container h2 {
+    font-size: 1.6rem;
+  }
+}
