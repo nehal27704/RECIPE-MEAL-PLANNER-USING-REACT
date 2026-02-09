@@ -1,0 +1,92 @@
+/* ===== Background Styling ===== */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: url("https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1600&q=80")
+    no-repeat center center/cover;   /* Kitchen/meal themed image */
+  background-attachment: fixed;
+}
+
+/* ===== Main Page Container ===== */
+.about-page {
+  background: rgba(255, 255, 255, 0.85); /* white overlay for readability */
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 40px;
+  border-radius: 18px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  line-height: 1.8;
+}
+
+/* ===== Hero Section ===== */
+.about-hero {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.about-hero h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.about-hero p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* ===== Content Section ===== */
+.about-content {
+  color: #444;
+}
+
+.about-content h2 {
+  margin-top: 30px;
+  font-size: 1.8rem;
+  color: #2e7d32; /* green accent */
+  border-left: 5px solid #4caf50;
+  padding-left: 10px;
+}
+
+.about-content p {
+  margin-top: 15px;
+  font-size: 1.05rem;
+}
+
+.about-content ul {
+  list-style: none;
+  margin-top: 20px;
+  padding-left: 0;
+}
+
+.about-content li {
+  background: #f1f8e9;
+  margin-bottom: 12px;
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-size: 1.05rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  transition: 0.2s;
+}
+
+.about-content li:hover {
+  background: #dcedc8;
+  transform: translateY(-2px);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .about-page {
+    padding: 25px;
+    margin: 40px 15px;
+  }
+
+  .about-hero h1 {
+    font-size: 2rem;
+  }
+
+  .about-content h2 {
+    font-size: 1.5rem;
+  }
+}
